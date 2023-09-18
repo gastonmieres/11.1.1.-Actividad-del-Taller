@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const getCountryInfoButton = document.getElementById("get-country-info");
+    const clearCountryInfoButton = document.getElementById("clear-country-info"); // Botón "Borrar Información"
     const countryInfoDiv = document.getElementById("country-info");
     const pageContainer = document.querySelector(".page-container");
 
@@ -44,5 +45,20 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             alert("Por favor, ingresa un nombre de país válido.");
         }
+    });
+
+    // Evento click para el botón "Borrar Información"
+    clearCountryInfoButton.addEventListener("click", () => {
+        // Limpiar el campo de entrada
+        document.getElementById("country-input").value = "";
+
+        // Ocultar los datos del país
+        countryInfoDiv.classList.add("hidden");
+
+        // Mostrar la información inicial
+        document.querySelector(".initial-info").style.opacity = 1;
+
+        // Restaurar el margen del "page-container"
+        pageContainer.style.margin = "10px auto";
     });
 });

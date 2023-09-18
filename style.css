@@ -23,23 +23,24 @@ input {
     width: 200px;
 }
 
+.nombre-en-ingles {
+    color: black; /* Cambia el color del texto del párrafo a gris */
+    font-size: 12px; /* Ajusta el tamaño de fuente del párrafo según sea necesario */
+    margin: 5px; /* Elimina el margen superior e inferior del párrafo */
+}
+
 button {
     padding: 10px 20px;
     background-color: #0074D9;
     color: #fff;
-    border: none;
+    border: 1px solid fff;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
 }
 
 button:hover {
-    background-color: #0056b3;
-}
-
-/* Alinear el botón al centro */
-#get-country-info {
-    display: block;
-    margin: 0 auto;
+    box-shadow: #fff 1px 1px 8px;
 }
 
 .page-container {
@@ -58,4 +59,18 @@ button:hover {
     overflow: hidden; /* Oculta el contenido que se desborda */
     opacity: 50; /* Oculta el contenido inicialmente */
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transición suave */
+}
+
+#get-country-info,
+#clear-country-info {
+    display: inline-block; /* Muestra los botones en línea */
+    margin-right: 10px; /* Agrega un margen derecho entre los botones si es necesario */
+}
+
+#country-info {
+    border: #fff 1px solid;
+    border-radius: 5px;
+    background-color: #ffffff3a;
+    margin-inline-start: 2rem;
+    margin-inline-end: 2.6rem;
 }
