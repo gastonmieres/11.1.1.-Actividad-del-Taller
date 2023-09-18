@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         document.getElementById("country-name").textContent = countryName;
                         setTimeout(() => {
                             document.getElementById("country-capital").textContent = countryCapital;
-                        }, 2000); // Espera 1000ms (2 segundo) antes de mostrar el siguiente dato
+                        }, 1000); // Espera 1000ms (1 segundo) antes de mostrar el siguiente dato
                         setTimeout(() => {
                             document.getElementById("country-population").textContent = countryPopulation;
-                        }, 4000); // Espera 2000ms (4 segundos) antes de mostrar el siguiente dato
+                        }, 3000); // Espera 2000ms (3 segundos) antes de mostrar el siguiente dato
                         setTimeout(() => {
                             document.getElementById("country-area").textContent = countryArea;
-                        }, 6000); // Espera 3000ms (6 segundos) antes de mostrar el último dato
+                        }, 5000); // Espera 3000ms (5 segundos) antes de mostrar el último dato
 
                         // Mostrar la información del país con una transición suave
                         countryInfoDiv.classList.remove("hidden");
